@@ -21,7 +21,7 @@
             <div><ion-label style="margin: 10px;" color="dark">Regular pay</ion-label></div>
           </ion-col>
           <ion-col>
-            <div><ion-label style="margin: 10px;" color="dark">{{regularPay}}</ion-label><br></div>
+            <div><ion-label style="margin: 10px;" color="dark">{{regularPay| number:'1.2-2' }}</ion-label><br></div>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -29,7 +29,7 @@
             <div><ion-label style="margin: 10px;" color="secondary">Overtime pay</ion-label></div>
           </ion-col>
           <ion-col>
-            <div><ion-label style="margin: 10px;" color="secondary">{{overtimePay}}</ion-label><br></div>
+            <div><ion-label style="margin: 10px;" color="secondary">{{overtimePay| number:'1.2-2' }}</ion-label><br></div>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -37,7 +37,7 @@
             <div><ion-label style="margin: 10px;" color="danger">Tax</ion-label></div>
           </ion-col>
           <ion-col>
-            <div><ion-label style="margin: 10px;" color="danger">{{tax}}</ion-label><br></div>
+            <div><ion-label style="margin: 10px;" color="danger">{{tax| number:'1.2-2' }}</ion-label><br></div>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -45,7 +45,15 @@
             <div><ion-label style="margin: 10px;" color="primary">Total pay</ion-label></div>
           </ion-col>
           <ion-col>
-            <div><ion-label style="margin: 10px;" color="primary">{{totalPay}}</ion-label><br></div>
+            <div><ion-label style="margin: 10px;" color="primary">{{totalPay| number:'1.2-2' }}</ion-label><br></div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div><ion-label style="margin: 10px;" color="success">Net</ion-label></div>
+          </ion-col>
+          <ion-col>
+            <div><ion-label style="margin: 10px;" color="success"><ion-text color="primary">{{totalPay| number:'1.1-1' }}</ion-text> - <ion-text color="danger">{{tax| number:'1.1-1' }}</ion-text> = {{net| number:'1.1-1' }}</ion-label><br></div>
           </ion-col>
         </ion-row>
         </ion-grid>
