@@ -15,10 +15,40 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-label style="margin: 10px;" color="dark">Regular pay</ion-label>  <ion-label style="margin: 10px;" color="dark">0</ion-label><br><br>
-      <ion-label style="margin: 10px;" color="secondary">Overtime pay</ion-label>  <ion-label style="margin: 10px;" color="secondary">0</ion-label><br><br>
-      <ion-label style="margin: 10px;" color="danger">Tax</ion-label>  <ion-label style="margin: 10px;" color="danger">0</ion-label><br><br>
-      <ion-label style="margin: 10px;" color="primary">Total pay</ion-label>  <ion-label style="margin: 10px;" color="primary">0</ion-label><br><br>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div><ion-label style="margin: 10px;" color="dark">Regular pay</ion-label></div>
+          </ion-col>
+          <ion-col>
+            <div><ion-label style="margin: 10px;" color="dark">0</ion-label><br></div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div><ion-label style="margin: 10px;" color="secondary">Overtime pay</ion-label></div>
+          </ion-col>
+          <ion-col>
+            <div><ion-label style="margin: 10px;" color="secondary">0</ion-label><br></div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div><ion-label style="margin: 10px;" color="danger">Tax</ion-label></div>
+          </ion-col>
+          <ion-col>
+            <div><ion-label style="margin: 10px;" color="danger">0</ion-label><br></div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div><ion-label style="margin: 10px;" color="primary">Total pay</ion-label></div>
+          </ion-col>
+          <ion-col>
+            <div><ion-label style="margin: 10px;" color="primary">0</ion-label><br></div>
+          </ion-col>
+        </ion-row>
+        </ion-grid>
     </ion-card-content>
   </ion-card>
 
@@ -33,6 +63,6 @@
   </ion-item>
 
   <br>
-  <ion-button style="bottom: 5%; position: absolute; width: 90%; left: 5%;" expand="block">Calculate</ion-button>
+  <ion-button onclick="" style="bottom: 5%; position: absolute; width: 90%; left: 5%;" expand="block">Calculate</ion-button>
 
 </ion-content>
