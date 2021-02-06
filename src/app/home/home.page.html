@@ -21,7 +21,7 @@
             <div><ion-label style="margin: 10px;" color="dark">Regular pay</ion-label></div>
           </ion-col>
           <ion-col>
-            <div><ion-label style="margin: 10px;" color="dark">0</ion-label><br></div>
+            <div><ion-label style="margin: 10px;" color="dark">{{regularPay}}</ion-label><br></div>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -29,7 +29,7 @@
             <div><ion-label style="margin: 10px;" color="secondary">Overtime pay</ion-label></div>
           </ion-col>
           <ion-col>
-            <div><ion-label style="margin: 10px;" color="secondary">0</ion-label><br></div>
+            <div><ion-label style="margin: 10px;" color="secondary">{{overtimePay}}</ion-label><br></div>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -37,7 +37,7 @@
             <div><ion-label style="margin: 10px;" color="danger">Tax</ion-label></div>
           </ion-col>
           <ion-col>
-            <div><ion-label style="margin: 10px;" color="danger">0</ion-label><br></div>
+            <div><ion-label style="margin: 10px;" color="danger">{{tax}}</ion-label><br></div>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -45,7 +45,7 @@
             <div><ion-label style="margin: 10px;" color="primary">Total pay</ion-label></div>
           </ion-col>
           <ion-col>
-            <div><ion-label style="margin: 10px;" color="primary">0</ion-label><br></div>
+            <div><ion-label style="margin: 10px;" color="primary">{{totalPay}}</ion-label><br></div>
           </ion-col>
         </ion-row>
         </ion-grid>
@@ -54,15 +54,15 @@
 
   <ion-item>
     <ion-label position="floating">Number of hours worked</ion-label>
-    <ion-input type="number" value=""></ion-input>
+    <ion-input type="number" value="hrsWorked" [(ngModel)]="hrsWorked"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Hourly rate</ion-label>
-    <ion-input type="number" value=""></ion-input>
+    <ion-input type="number" value="hrlyRate" [(ngModel)]="hrlyRate"></ion-input>
   </ion-item>
 
   <br>
-  <ion-button onclick="" style="bottom: 5%; position: absolute; width: 90%; left: 5%;" expand="block">Calculate</ion-button>
+  <ion-button (click)="calculate(hrsWorked,hrlyRate)" style="bottom: 5%; position: absolute; width: 90%; left: 5%;" expand="block">Calculate</ion-button>
 
 </ion-content>
