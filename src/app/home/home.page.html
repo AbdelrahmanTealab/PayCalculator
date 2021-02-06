@@ -9,6 +9,30 @@
 
 <ion-content>
 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Calculate your pay</ion-card-subtitle>
+    </ion-card-header>
 
+    <ion-card-content>
+      <ion-label style="margin: 10px;" color="dark">Regular pay</ion-label>  <ion-label style="margin: 10px;" color="dark">0</ion-label><br><br>
+      <ion-label style="margin: 10px;" color="secondary">Overtime pay</ion-label>  <ion-label style="margin: 10px;" color="secondary">0</ion-label><br><br>
+      <ion-label style="margin: 10px;" color="danger">Tax</ion-label>  <ion-label style="margin: 10px;" color="danger">0</ion-label><br><br>
+      <ion-label style="margin: 10px;" color="primary">Total pay</ion-label>  <ion-label style="margin: 10px;" color="primary">0</ion-label><br><br>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label position="floating">Number of hours worked</ion-label>
+    <ion-input type="number" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Hourly rate</ion-label>
+    <ion-input type="number" value=""></ion-input>
+  </ion-item>
+
+  <br>
+  <ion-button style="bottom: 5%; position: absolute; width: 90%; left: 5%;" expand="block">Calculate</ion-button>
 
 </ion-content>
